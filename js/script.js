@@ -7,7 +7,7 @@ var todoListContainer= document.getElementById("todo-list");
 function onAddTaskClicked(event) {
     var taskName = newTaskInput.value;
     newTaskInput.value = "";
-    todoListContainer.insertAdjacentElement('afterbegin', taskName);
+    todoListContainer.insertAdjacentHTML('afterbegin', taskName);
 }
 
 //Step 3 Link to event handler 
