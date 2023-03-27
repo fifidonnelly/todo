@@ -28,10 +28,10 @@ else{
 }
 
 function showActiveTasks() {
-    var tasks = document.getElementsByClassName('task');
-    for (let i= 0; < tasks.length; i++){
+    var tasks = document.getElementsByClassName("task");
+    for (let i= 0; i < tasks.length; i++){
         if (tasks[i].classList.contains("completed")){
-            tasks[i]style.display = "none";
+            tasks[i].style.display = "none";
         }  else {
             tasks[i].style.display = "block"; 
                 }
