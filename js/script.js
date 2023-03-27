@@ -79,6 +79,6 @@ addTaskButton.addEventListener('click', onAddTaskClicked);
 todoListContainer.addEventListener('click', onTodoListContainerClicked);
 showActiveButton.addEventListener('click', showActiveTasks);
 showAllButton.addEventListener('click', showAllTasks);
-showCompletedButton.addEventListener)'click', showCompletedTasks);
+showCompletedButton.addEventListener('click', showCompletedTasks);
 
 renderTasks()
