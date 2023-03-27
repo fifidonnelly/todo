@@ -4,7 +4,7 @@ var newTaskInput = document.getElementById("task-input");
 var todoListContainer= document.getElementById("todo-list");
 var templateContainer = document.getElementById("list-item-template");
 var template = templateContainer.innerHTML;
-var showActiveButton = document.getElementById("show-Active");
+var showActiveButton = document.getElementById("show-active");
 
 //Step 2 Write the behaviour 
 function onAddTaskClicked(event) {
