@@ -11,7 +11,7 @@ var showCompletedButton = document.getElementById("show-completed");
 function renderTasks() {
     for (i = 0; i< localStorage.length; i++) {
     var taskname = localStorage.key(i)
-    var isCompleted =localStorage.getItem (taskName)
+    var isCompleted =localStorage.getItem (taskName) == "true";
     var taskHTML = template.replace("<-- TASK_NAME -->", taskName);
     if (!isCompleted) {
         todoListContainer.insertAdjacentHTML('afterbegin', taskHTML);
@@ -66,7 +66,7 @@ function showActiveTasks() {
 
 function showAllTasks () {
     var tasks = document.getElementsByClassName('task');
-    for (let i=0; i < tasks.length; i++) {
+    for (let i = 0; i < tasks.length; i++) {
         tasks [i].style.display = "block";
     }
 }
@@ -74,9 +74,9 @@ function showAllTasks () {
 
 function showCompletedTasks () {
     var tasks = document.getElementsByClassName('task');
-    for (let i= 0; i <tasks.length; i++ ) {
+    for (let i = 0; i <tasks.length; i++ ) {
         if (tasks[i].classList.contains("completed")){
-            //set the display to "none"
+            //set the display to "block"
             tasks[i].style.display = "block";
         }  else {
             tasks[i].style.display = "none"; 
