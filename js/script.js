@@ -28,10 +28,10 @@ while(!targetElement.classList.contains("task")) {
 }
 var checkbox = targetElement.querySelector(".checkbox");
 if(checkbox.checked){
-    targetElement.classList.add("completed")
+    targetElement.classList.add("completed");
 }
 else{
-    targetElement.classList.remove("completed")
+    targetElement.classList.remove("completed");
 }
 var taskNameElement = targetElement.querySelector(".task-name")
 var taskName = taskNameElement.innerText;
