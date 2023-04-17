@@ -29,7 +29,7 @@ function onAddTaskClicked(event) {
     var taskName = newTaskInput.value;
     newTaskInput.value = "";
     var taskHTML = template.replace("<!-- TASK_NAME -->", taskName);
-    todoListContainer.insertAdjacentHTML('afterbegin', taskHTML);
+    todoListContainer.insertAdjacentHTML('beforeend', taskHTML);
     saveTasks(taskName, false);
 }
 
@@ -90,7 +90,7 @@ function showCompletedTasks () {
 
 //Step 3 Link to event handler 
 addTaskButton.addEventListener('click', onAddTaskClicked); 
-todoListContainer.addEventListener('click', onTodoListContainerClicked);
+todoListContainer.addEventListener('click', onTodoListClicked);
 showActiveButton.addEventListener('click', showActiveTasks);
 showAllButton.addEventListener('click', showAllTasks);
 showCompletedButton.addEventListener('click', showCompletedTasks);
