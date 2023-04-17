@@ -6,7 +6,7 @@ var templateContainer = document.getElementById("list-item-template");
 var template = templateContainer.innerHTML;
 var showActiveButton = document.getElementById("show-active");
 var showAllButton = document.getElementById("show-all");
-var showCompletedButton =document.getElementById("show-completed");
+var showCompletedButton = document.getElementById("show-completed");
 
 function saveTasks(name,isCompleted) {
     localStorage.setItem(name, isCompleted);
@@ -60,6 +60,14 @@ function showAllTasks () {
 function showCompletedTasks () {
     var tasks = document.getElementsByClassName('task');
     for (let i= 0; i <tasks.length; i++ ) {
+        if (tasks[i].classList.contains("completed")){
+            //set the display to "none"
+            tasks[i].style.display = "block";
+        }  else {
+            tasks[i].style.display = "none"; 
+                }
+    } 
+}
 
     }
 }
