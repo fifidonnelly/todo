@@ -84,10 +84,6 @@ function showCompletedTasks () {
     } 
 }
 
-
-
-
-
 //Step 3 Link to event handler 
 addTaskButton.addEventListener('click', onAddTaskClicked); 
 todoListContainer.addEventListener('click', onTodoListClicked);
