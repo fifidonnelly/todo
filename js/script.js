@@ -42,15 +42,13 @@ function showActiveTasks() {
     var tasks = document.getElementsByClassName('task')
     for (let i = 0; i < tasks.length; i++){
         if (tasks[i].classList.contains("completed")){
-            // get the element you want to hide 
-            var element = tasks[i]
             //set the display to "none"
             tasks[i].style.display = "none";
         }  else {
             tasks[i].style.display = "block"; 
                 }
     } 
-}}
+}
 
 function showAllTasks () {
     var tasks = document.getElementsByClassName('task');
