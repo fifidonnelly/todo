@@ -6,7 +6,7 @@ var templateContainer = document.getElementById("list-item-template");
 var template = templateContainer.innerHTML;
 var showActiveButton = document.getElementById("show-active");
 var showAllButton = document.getElementById("show-all");
-var showCompletedButton =documennt.getElementById("show-completed");
+var showCompletedButton =document.getElementById("show-completed");
 
 function saveTasks(name,isCompleted) {
     localStorage.setItem(name, isCompleted);
