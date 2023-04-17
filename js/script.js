@@ -10,7 +10,7 @@ var showCompletedButton = document.getElementById("show-completed");
 
 function renderTasks() {
     for (i = 0; i< localStorage.length; i++) {
-    var taskname = localStorage.key(i)
+    var taskName = localStorage.key(i)
     var isCompleted =localStorage.getItem (taskName) == "true";
     var taskHTML = template.replace("<-- TASK_NAME -->", taskName);
     if (!isCompleted) {
