@@ -23,6 +23,8 @@ function onAddTaskClicked(event) {
 
 
 function onTodoListContainerClicked(event){
+    let targetElement = event.target;
+    
 while(!targetElement.classList.contains("task")) {
     targetElement = targetElement.parentElement; 
 }
